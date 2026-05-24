@@ -8,9 +8,9 @@ export const brandColors = {
 };
 
 export const cellColors = [
-  '#ebf8ff',
-  '#e7e8da',
-  '#f7d5ba',
-  '#8cacd3',
-  '#7b9626',
+  lightBlue: '#ebf8ff',
+  lightGreen: '#e7e8da',
+  apricot: '#f7d5ba',
+  lightBlue: '#8cacd3',
+  green: '#7b9626',
 ];

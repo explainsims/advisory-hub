@@ -83,7 +83,7 @@ export default function CaselWheel() {
             </clipPath>
           </defs>
 
-          <image href="/CASEL.png" x="0" y="0" width="1000" height="1000" clipPath="url(#wheelClip)" />
+          <image href="CASEL.png" x="0" y="0" width="1000" height="1000" clipPath="url(#wheelClip)" />
           
           {/* Ring 4: Communities */}
           <g 

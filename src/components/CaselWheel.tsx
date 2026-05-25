@@ -6,6 +6,19 @@ import { CASEL_DATA, CaselCategory } from '../data/casel';
 export default function CaselWheel() {
   const [selectedSection, setSelectedSection] = useState<CaselCategory | null>(null);
 
+  // The ExplAIn Sims Cloudflare Worker serves this app at explainsims.com/<app>/
+  // and strips the first segment before forwarding to Cloud Run. The worker's
+  // HTMLRewriter does NOT rewrite SVG <image href>, and the document URL may
+  // not have a trailing slash, so we can't rely on a relative or root-absolute
+  // path. Derive the prefix from the current URL at render time.
+  const caselImageSrc = (() => {
+    if (typeof window === 'undefined') return '/CASEL.png';
+    const firstSegment = window.location.pathname.split('/').filter(Boolean)[0];
+    return window.location.hostname.endsWith('explainsims.com') && firstSegment
+      ? `/${firstSegment}/CASEL.png`
+      : '/CASEL.png';
+  })();
+
   // Wedge angles: 5 wedges, 72 degrees each.
   // 0 is top.
   // We'll calculate SVG paths for the wedges.
@@ -83,7 +96,7 @@ export default function CaselWheel() {
             </clipPath>
           </defs>
 
-          <image href="CASEL.png" x="0" y="0" width="1000" height="1000" clipPath="url(#wheelClip)" />
+          <image href={caselImageSrc} x="0" y="0" width="1000" height="1000" clipPath="url(#wheelClip)" />
           
           {/* Ring 4: Communities */}
           <g 

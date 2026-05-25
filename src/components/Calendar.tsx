@@ -328,6 +328,62 @@ export default function AdvisoryCalendar() {
         {activeTab === 'resources' ? (
           <div className="flex-1 overflow-auto bg-slate-50 rounded-t-xl shadow-sm border-x border-t border-slate-200">
             <div className="p-8 h-full flex flex-col">
+              {/* Grade-Level Drive Tiles */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <a
+                  href="https://drive.google.com/drive/folders/13bEst2tF6vHw198DXYBJCQYZqo93Fz_D?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center rounded-xl py-6 px-4 text-white font-extrabold text-xl tracking-tight shadow-md hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 overflow-hidden"
+                  style={{ backgroundColor: '#0635aa' }}
+                >
+                  <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-200 rounded-xl" />
+                  <span className="relative flex items-center gap-2">
+                    <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Grade 9
+                  </span>
+                </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1lZxjeJITiAjJ_JttV9PzQlwSaXsagZH1?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center rounded-xl py-6 px-4 font-extrabold text-xl tracking-tight shadow-md hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 overflow-hidden"
+                  style={{ backgroundColor: '#fec707', color: '#232f49' }}
+                >
+                  <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-200 rounded-xl" />
+                  <span className="relative flex items-center gap-2">
+                    <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Grade 10
+                  </span>
+                </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1qjbwcMNtAKzY5fXHFNeHEW1Z_6H1f3Bc?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center rounded-xl py-6 px-4 text-white font-extrabold text-xl tracking-tight shadow-md hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 overflow-hidden"
+                  style={{ backgroundColor: '#7b9626' }}
+                >
+                  <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-200 rounded-xl" />
+                  <span className="relative flex items-center gap-2">
+                    <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Grade 11
+                  </span>
+                </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1h4JpXLIvkYMZLsOs2HWEAR2nhqt6q8BK?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative flex items-center justify-center rounded-xl py-6 px-4 text-white font-extrabold text-xl tracking-tight shadow-md hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-200 overflow-hidden"
+                  style={{ backgroundColor: '#f26544' }}
+                >
+                  <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-200 rounded-xl" />
+                  <span className="relative flex items-center gap-2">
+                    <svg className="w-5 h-5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Grade 12
+                  </span>
+                </a>
+              </div>
+
               <div className="flex justify-between items-start mb-8">
                 <div className="flex-1">
                   <h2 className="text-3xl font-bold text-slate-800 mb-2">Advisory Resources</h2>
